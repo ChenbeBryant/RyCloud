@@ -30,6 +30,22 @@ public:
 	size_type capacity() const noexcept;
 	bool empty() const noexcept;
 	void reverse(size_type new_cap);
+	
+	// 元素访问函数
+    reference operator[](size_type pos);
+    const_reference operator[](size_type pos) const;
+
+    // 修改器函数
+    void push_back(const value_type& val);
+    void pop_back();
+
+private:
+    allocator_type allocator_;
+    pointer data_;
+    size_type size_;
+    size_type capacity_;
+
+    void reallocate(size_type new_cap);
 };
 }
 
