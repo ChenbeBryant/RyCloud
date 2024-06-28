@@ -20,7 +20,7 @@ public:
 
 	//构造函数
 	vector_ry();
-	explicit vector(size_type n);
+	explicit vector_ry(size_type n);
 
 	//析构函数
 	~vector_ry();
