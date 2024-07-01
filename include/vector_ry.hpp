@@ -16,7 +16,9 @@ public:
 	using reference = value_type&;
 	using const_reference = const value_type&;
 	using pointer = typename std::allocator_traits<allocator_type>::pointer;
-	
+	using const_pointer = typename std::allocator_traits<allocator_type>::const_pointer;
+	using iterator = pointer;
+    using const_iterator = const_pointer;
 
 	//构造函数
 	vector_ry();
@@ -35,6 +37,10 @@ public:
     reference operator[](size_type pos);
     const_reference operator[](size_type pos) const;
 
+	iterator begin() noexcept;
+    const_iterator begin() const noexcept;
+    iterator end() noexcept;
+    const_iterator end() const noexcept;
     // 修改器函数
     void push_back(const value_type& val);
     void pop_back();

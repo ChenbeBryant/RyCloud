@@ -75,6 +75,26 @@ typename vector_ry<T, Alloc>::const_reference vector_ry<T, Alloc>::operator[](si
     return data_[pos];
 }
 
+template<typename T, typename Alloc>
+typename vector_ry<T, Alloc>::iterator vector_ry<T, Alloc>::begin() noexcept {
+    return size_ > 0 ? data_ : nullptr;
+}
+
+template<typename T, typename Alloc>
+typename vector_ry<T, Alloc>::const_iterator vector_ry<T, Alloc>::begin() const noexcept {
+    return size_ > 0 ? data_ : nullptr;
+}
+
+template<typename T, typename Alloc>
+typename vector_ry<T, Alloc>::iterator vector_ry<T, Alloc>::end() noexcept {
+    return size_ > 0 ? data_ + size_ : nullptr;
+}
+
+template<typename T, typename Alloc>
+typename vector_ry<T, Alloc>::const_iterator vector_ry<T, Alloc>::end() const noexcept {
+    return size_ > 0 ? data_ + size_ : nullptr;
+}
+
 //ÐÞ¸ÄÆ÷
 template<typename T, typename Alloc>
 void vector_ry<T, Alloc>::push_back(const value_type& val) {

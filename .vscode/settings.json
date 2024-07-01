@@ -26,6 +26,15 @@
 		"xstring": "cpp",
 		"xlocale": "cpp",
 		"streambuf": "cpp",
-		"xlocnum": "cpp"
+		"xlocnum": "cpp",
+		"ios": "cpp",
+		"istream": "cpp",
+		"ostream": "cpp",
+		"stdexcept": "cpp",
+		"system_error": "cpp",
+		"tuple": "cpp",
+		"xfacet": "cpp",
+		"xiosbase": "cpp",
+		"xlocinfo": "cpp"
 	}
 }
