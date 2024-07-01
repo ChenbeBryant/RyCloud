@@ -20,6 +20,12 @@
 		"xmemory0": "cpp",
 		"xstddef": "cpp",
 		"xtr1common": "cpp",
-		"xutility": "cpp"
+		"xutility": "cpp",
+		"iostream": "cpp",
+		"vector": "cpp",
+		"xstring": "cpp",
+		"xlocale": "cpp",
+		"streambuf": "cpp",
+		"xlocnum": "cpp"
 	}
 }

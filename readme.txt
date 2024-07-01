@@ -8,3 +8,6 @@ vector内部函数定义
 
 --20240628
 实现构造，析构，empty
+
+--202400701
+vector 初步实现，附test code

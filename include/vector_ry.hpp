@@ -29,7 +29,7 @@ public:
 	size_type size() const noexcept;
 	size_type capacity() const noexcept;
 	bool empty() const noexcept;
-	void reverse(size_type new_cap);
+	void reserve(size_type new_cap);
 	
 	// ÔªËØ·ÃÎÊº¯Êý
     reference operator[](size_type pos);
